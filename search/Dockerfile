@@ -1,10 +1,10 @@
 FROM node:latest
 
-COPY . /src
-
 WORKDIR /src
 
-RUN npm install --production
+COPY . /src
+
+RUN npm install 
 
 EXPOSE 3000
 
